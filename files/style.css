@@ -1,0 +1,170 @@
+/*Make some content not display weird*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body{
+    font-size: 100%;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+
+/*Page*/
+
+#title{
+    background:#2F323A;
+    width: 100%;
+    padding: 3%;
+    float: left;
+    height: 15vh;
+    position: relative;
+    text-align: center;
+}
+
+#slideshow{
+    background: rgb(175, 175, 175);
+    width: 100%;
+    padding: 3%;
+    float: left;
+    height: auto;
+    position: relative;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+#description{
+    background:rgb(175, 175, 175);
+    width: 100%;
+    padding: 3%;
+    float: left;
+    height: 100vh;
+    position: relative;
+    text-align: center;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(./images/Home_desc_bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.description_content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20%;
+    font-size: 150%;
+}
+
+/*navbar stuff*/
+
+div, section, span, ul, li, a, header{
+    box-sizing: border-box;
+}
+
+#navbar{
+    width: 100%;
+    float: left;
+    height: 13vh;
+    position: relative;
+}
+
+header{
+    background-color: #2F323A;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+    align-items: center;
+    position: fixed;
+    z-index: 999;
+}
+.navbar li{
+    list-style: none;
+    display: inline-block;
+    margin: 20px;
+}
+.navbar li a{
+    text-decoration: none;
+    font-size: 15px;
+}
+.navbar ul li a{
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+/* slideshow */
+
+#home_slideshow{
+  overflow: hidden;
+  height: 540px;
+  width: 960px;
+  margin: 0 auto;
+  background-color: rgb(175, 175, 175);
+}
+ 
+/* Style each of the sides
+with a fixed width and height */
+.slide_home{
+  float: left;
+  height: 540px;
+  width: 960px;
+}
+ 
+/* Add animation to the slides */
+.slide_home_containter{
+   
+/* Calculate the total width on the
+  basis of number of slides */
+  width: calc(960px * 10);
+ 
+/* Specify the animation with the
+  duration and speed */
+  animation: slide 30s ease infinite;
+}
+ 
+/* Define the animation
+for the slideshow */
+@keyframes slide{
+    /* Calculate the margin-left for
+    each of the slides */
+    10%{
+    margin-left: 0px;
+    }
+    
+    20%{
+    margin-left: calc(-960px * 1);
+    }
+    
+    30%{
+    margin-left: calc(-960px * 2);
+    }
+    
+    40%{
+    margin-left: calc(-960px * 3);
+    }
+
+    50%{
+    margin-left: calc(-960px * 4);
+    }
+
+    60%{
+    margin-left: calc(-960px * 5);
+    }
+
+    70%{
+    margin-left: calc(-960px * 6);
+    }
+
+    80%{
+    margin-left: calc(-960px * 7);
+    }
+
+    90%{
+    margin-left: calc(-960px * 8);
+    }
+}
