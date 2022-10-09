@@ -60,6 +60,19 @@ body{
     font-size: 150%;
 }
 
+#redirects{
+    background:#2F323A;
+    width: 100%;
+    padding: 3%;
+    float: left;
+    height: 15vh;
+    position: relative;
+    text-align: center;
+}
+.redirects_content{
+    
+}
+
 /*navbar stuff*/
 
 div, section, span, ul, li, a, header{
