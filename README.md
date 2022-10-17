@@ -3,5 +3,5 @@ School project mhm yuppers
 
 Some sources:
 
-Slideshow: https://www.geeksforgeeks.org/programming-a-slideshow-with-html-and-css/\n
+Slideshow: https://www.geeksforgeeks.org/programming-a-slideshow-with-html-and-css/
 Navbar: https://www.youtube.com/watch?v=V0cd7i4aCb8
