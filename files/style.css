@@ -22,8 +22,7 @@ body{
     width: 100%;
     padding: 3%;
     float: left;
-    height: 15vh;
-    position: relative;
+    height: auto;
     text-align: center;
 }
 
@@ -33,7 +32,6 @@ body{
     padding: 3%;
     float: left;
     height: auto;
-    position: relative;
     text-align: center;
     display: flex;
     justify-content: center;
@@ -50,7 +48,6 @@ body{
     background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(./images/Home_desc_bg.jpg);
     background-position: center;
     background-size: cover;
-    background-repeat: no-repeat;
 }
 .description_content{
     display: flex;
@@ -60,18 +57,49 @@ body{
     font-size: 150%;
 }
 
+/* yoinked the navbar code */
+
 #redirects{
     background:#2F323A;
     width: 100%;
     padding: 3%;
     float: left;
-    height: 15vh;
+    height: auto;
     position: relative;
     text-align: center;
 }
 .redirects_content{
-    
+    width: 25%;
+    display: flex;
+    float: left;
+    height: auto;
+    position: relative;
 }
+.redirects_content li{
+    list-style: none;
+    margin: 25px;
+}
+.redirects_content li a{
+    text-decoration: none;
+    font-size: 15px;
+}
+.redirects_content ul li a{
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+.redirects_contacts{
+    width: 25%;
+    display: flex;
+    float: right;
+    height: auto;
+    position: relative;
+}
+.redirects_contacts li{
+    list-style: none;
+    margin: 25px;
+}
+
 
 /*navbar stuff*/
 
